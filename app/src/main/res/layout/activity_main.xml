@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="Detail Form"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:drawableTint="@color/colorAccent"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:inputType="text"
+            android:background="@drawable/edittext_bg"
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorAccent"
+            android:inputType="textEmailAddress"
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter your email" />
+
+        <EditText
+            android:drawableTint="@color/colorAccent"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+            android:inputType="phone"
+            android:id="@+id/userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Enter your mobile number" />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+        </RadioGroup>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_home_black_24dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorAccent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:id="@+id/userAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your home address"
+            android:maxLines="4"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <CheckBox
+            android:layout_gravity="start"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginTop="10dp"
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CheckBox" />
+
+        <Button
+            android:background="@drawable/edittext_bg"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginTop="16dp"
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Details" />
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>
